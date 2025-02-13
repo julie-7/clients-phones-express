@@ -13,10 +13,4 @@ const getClients = async ()=>{
 useEffect(()=>{
 getClients()
 },[])
-
-return(
-    <div>TableClient</div>
-)
 }
-
-export default App

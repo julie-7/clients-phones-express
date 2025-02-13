@@ -27,3 +27,12 @@ const sql = `update clients
     const result = await db.query(sql,params)
             res.json({message:"object modified"})
 }
+
+export const deleteclients = async (req,res)=>{
+
+    const id_client = req.params.id
+    const params = [id_client]
+    const sql = `delete from clients where id_client = $1`
+    const result = await db.query(sql,params)
+    res.json({message: "object deleted"})
+}

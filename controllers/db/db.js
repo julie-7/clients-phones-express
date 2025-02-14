@@ -1,5 +1,5 @@
-import pg from `pg-promise`
-import dotenv from `dotenv`
+import pg from  "pg-promise"
+import dotenv from "dotenv"
 dotenv.config()
 
 const pgc= pg()
@@ -8,7 +8,7 @@ const str = process.env.CN_STR
 export const db = pgc(str)
 
 db.connect()
-then(() => {
+.then(() => {
 console.log("Success Connection")
 })
 

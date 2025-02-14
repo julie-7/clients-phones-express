@@ -1,6 +1,6 @@
-import express from from `express`
+import express from "express"
 export const phone = express()
-import { deletephones, getphones, postphones, putphones } from "../controllers/phonecontroller"
+import { deletephones, getphones, postphones, putphones } from "../controllers/phonecontroller.js"
 
 phone.get('/phones', getphones)
 phone.post('/phones',postphones)

@@ -1,6 +1,6 @@
-import express from from `express`
+import express from "express"
 export const client = express()
-import { getclients,postclients,putClients,deleteclients} from "../controllers/clientcpntroller"
+import { getclients,postclients,putClients,deleteclients} from "../controllers/clientcpntroller.js"
 
 client.get('/clients', getclients)
 client.post('/clients',postclients)

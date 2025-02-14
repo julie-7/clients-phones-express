@@ -1,4 +1,4 @@
-import {db} from "../db/cn.js"
+import { db } from "./db/db.js"
 
 export const getclients = async(req,res)=>{
 
